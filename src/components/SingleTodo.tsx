@@ -43,4 +43,4 @@ const SingleTodo = ({ todo, todos, settodos }: Props) => {
     )
 }
 
-export default SingleTodo
+export default SingleTodo;
