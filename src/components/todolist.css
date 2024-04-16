@@ -22,3 +22,13 @@
     width: 90%;
     flex-wrap: wrap;
 }
+.todos_single
+{
+    display: flex;
+    width: 30%;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 15px;
+    color: blueviolet;
+
+}
