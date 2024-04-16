@@ -15,3 +15,10 @@
 
 
 }
+.todos
+{
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    flex-wrap: wrap;
+}

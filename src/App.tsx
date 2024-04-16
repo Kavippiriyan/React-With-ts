@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import './App.css';
 import ToDoApp from './components/todolist'
 import { Todo } from "./components/model";
+import List  from './components/List'
 
 const APP: React.FC = () => {
   const [todo, settodo] = useState<string>("")
@@ -21,9 +22,7 @@ const APP: React.FC = () => {
   return (
     <div className="App">
       <ToDoApp todo={todo} settodo={settodo} handleadd={Handleadd} />
-      {todos.map(value=>(
-        <li>{value.todo}</li>
-      ))}
+      <List todos={todos} settodos={settodos} />
     </div>
   );
 }
