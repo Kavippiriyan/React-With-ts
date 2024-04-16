@@ -20,7 +20,8 @@
     display: flex;
     justify-content: space-evenly;
     width: 90%;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
+    
 }
 .todos_single
 {
@@ -29,6 +30,10 @@
     border-radius: 5px;
     padding: 20px;
     margin-top: 15px;
-    color: blueviolet;
-
+    
+}
+.icon
+{
+    width: 25%;
+    margin-left: 10px;
 }

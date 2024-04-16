@@ -12,14 +12,21 @@ type Props =
     }
 
 
+
 const SingleTodo = ({ todo, todos, settodos }: Props) => {
+    const handledone = (id: number) => {
+        settodos(
+            todos.map((value) =>
+                value.id === id ? { ...value, isDone: !todo.isDone } : todo)
+        )
+    }
     return (
         <form className='"todos_single'>
+            {todo.isDone ? (<s className='todos_single--text'>{todo.todo}</s>) : <span className='todos_single--text'>{todo.todo}</span>}
 
-            <span className='todos_single--text'>{todo.todo}</span>
             <span className="icon"><AiFillEdit /></span>
             <span className="icon"><AiFillDelete /></span>
-            <span className="icon"><MdDone /></span>
+            <span className="icon" onClick={() => handledone(todo.id)}><MdDone /></span>
         </form>
     )
 }
