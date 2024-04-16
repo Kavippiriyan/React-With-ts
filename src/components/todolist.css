@@ -1,0 +1,17 @@
+.input h1 {
+    color: blue;
+}
+
+.input input {
+    width: 250px;
+    height: 25px;
+}
+
+.input button {
+    width: 60px;
+    height: 30px;
+    border-color: red;
+    color: green;
+
+
+}
