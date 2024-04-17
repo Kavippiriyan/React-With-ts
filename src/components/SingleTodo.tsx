@@ -36,7 +36,11 @@ const SingleTodo = ({ todo, todos, settodos }: Props) => {
         <form className='"todos_single'>
             {todo.isDone ? (<s className='todos_single--text'>{todo.todo}</s>) : <span className='todos_single--text'>{todo.todo}</span>}
 
-            <span className="icon"><AiFillEdit /></span>
+            <span className="icon" onClick={() => {
+                if (!edit && !todo.isDone) {
+                    setedit(!edit)
+                }
+            }}><AiFillEdit /></span>
             <span className="icon" onClick={() => handledelete(todo.id)}><AiFillDelete /></span>
             <span className="icon" onClick={() => handledone(todo.id)}><MdDone /></span>
         </form>
